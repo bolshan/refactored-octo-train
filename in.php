@@ -34,7 +34,7 @@
   Please Wait...
 </button>`).prop("disabled", true);
         $.ajax({
-            url: 'sendMail.php',
+            url: <?php include 'sendMail.php' ?>,
             type: 'POST',
             data: formData,
             contentType: false,   
